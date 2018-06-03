@@ -3,9 +3,11 @@
 // Artillery
 
 #include <iostream>
+#include <string>
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
 
 void StartUp() {
     cout << "Welcome to Artillery" << endl;
@@ -18,7 +20,15 @@ void StartUp() {
 
 int main() {
     StartUp();
-    cout << "main process" << endl;
+
     int killed = 0;
+    string done;
+
+    do {
+        cout << "main process" << endl;
+        cout << "after main process, do you want to continue? [y/n]" << endl;
+        cin >> done;
+    } while (done != "n");
+
     cout << "You killed " << killed << " of the enemy." << endl;
 }
