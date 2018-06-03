@@ -7,11 +7,9 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-
-
 void StartUp() {
     cout << "Welcome to Artillery" << endl;
-    cout << "You are in the middle of a war and being charged by thousands of enemies." << endl; // NOLINT
+    cout << "You are in the middle of a war and being charged by thousands of enemies." << endl;
     cout << "You have one cannon, which you can shoot at any angle." << endl;
     cout << "You only have 10 cannonballs for this target." << endl;
     cout << "Let's begin..." << endl;
